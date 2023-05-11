@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-asmn
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/karthik-jk-tenant/my-app-2/devfile-sample-asmn@sha256:ef66d4431d5f2a92b8a104220781147900c22d9e6d625400f7e9d00290bb516d
+        name: my-nodejs
+        resources: {}
+status: {}
